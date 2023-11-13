@@ -4,8 +4,8 @@ export const bracket = [
     _id: 0,
     eventId: "6544044881951a10a8ae8688",
     ageDivisionId: "c7f3a83b-a2b7-4507-a745-30519be0b71e",
-    name: "Golder Single 3",
-    type: "SINGLE_ELIMINATION_3",
+    name: "Golder Single 2",
+    type: "SINGLE_ELIMINATION_2",
     teamCount: 3,
     sourceType: "POOL|DIVISION|TEAM|WINNER", // per game or per bracket?
     poolType: "LETTERS|NUMBERS", // ???
