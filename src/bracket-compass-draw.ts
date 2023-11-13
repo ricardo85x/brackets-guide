@@ -7,10 +7,24 @@ export const bracket = [
     name: "Golder Compass 4",
     type: "COMPASS_DRAW_4",
     teamCount: 4,
-    sourceType: "POOL|DIVISION|TEAM|WINNER", // per game or per bracket?
-    poolType: "LETTERS|NUMBERS", // ???
-    seedType: "?????", // ???
-    consolationGame: {}, // ????
+    consolationGames: [
+      {
+        id: 0,
+        name: "Consolation Game 1",
+        status: "UNSET|SET|FINISHED",
+        winner: "opponent1|null",
+        opponent1: {
+          rosterId: "A|null",
+          score: 0,
+          result: "win",
+        },
+        opponent2: {
+          rosterId: "B|null",
+          score: 0,
+          result: "loss",
+        },
+      },
+    ], // ????
 
     matches: [
       {
@@ -30,6 +44,11 @@ export const bracket = [
           score: 0,
           result: "loss",
         },
+        sourceType: "POOL|DIVISION|TEAM|WINNER", // per game or per bracket?
+        poolId: "id|null", //
+        seed: "1|null", // classification 1,2,3,etc
+        winnerGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
+        loserGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
       },
       {
         id: 1,
@@ -48,6 +67,11 @@ export const bracket = [
           score: 0,
           result: "win",
         },
+        sourceType: "POOL|DIVISION|TEAM|WINNER", // per game or per bracket?
+        poolId: "id|null", //
+        seed: "1|null", // classification 1,2,3,etc
+        winnerGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
+        loserGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
       },
 
       {
@@ -99,10 +123,7 @@ export const bracket = [
     name: "Golder Compass 8",
     type: "COMPASS_DRAW_8",
     teamCount: 8,
-    sourceType: "POOL|DIVISION|TEAM|WINNER", // per game or per bracket?
-    poolType: "LETTERS|NUMBERS", // ???
-    seedType: "?????", // ???
-    consolationGame: {}, // ????
+    consolationGames: [],
 
     matches: [
       // BASE GAMES
@@ -123,6 +144,11 @@ export const bracket = [
           score: 0,
           result: "loss",
         },
+        sourceType: "POOL|DIVISION|TEAM|WINNER", // per game or per bracket?
+        poolId: "id|null", //
+        seed: "1|null", // classification 1,2,3,etc
+        winnerGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
+        loserGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
       },
       {
         id: 1,
@@ -141,6 +167,11 @@ export const bracket = [
           score: 0,
           result: "win",
         },
+        sourceType: "POOL|DIVISION|TEAM|WINNER", // per game or per bracket?
+        poolId: "id|null", //
+        seed: "1|null", // classification 1,2,3,etc
+        winnerGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
+        loserGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
       },
       {
         id: 2,
@@ -159,6 +190,11 @@ export const bracket = [
           score: 0,
           result: "loss",
         },
+        sourceType: "POOL|DIVISION|TEAM|WINNER", // per game or per bracket?
+        poolId: "id|null", //
+        seed: "1|null", // classification 1,2,3,etc
+        winnerGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
+        loserGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
       },
       {
         id: 3,
@@ -177,6 +213,11 @@ export const bracket = [
           score: 0,
           result: "win",
         },
+        sourceType: "POOL|DIVISION|TEAM|WINNER", // per game or per bracket?
+        poolId: "id|null", //
+        seed: "1|null", // classification 1,2,3,etc
+        winnerGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
+        loserGame: "1|null", // Game 1, Game 2, Game 3, Game 4, Game 4, etc
       },
 
       // EAST GAMES
